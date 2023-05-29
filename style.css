@@ -1,0 +1,165 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-size: 62.5%;
+}
+
+body {
+	background: #181818;
+	height: 100vh;
+	overflow: hidden;
+	color: #fff;
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 20px 0;
+	font-weight: 600;
+}
+
+h1.light,
+h2.light,
+h3.light,
+h4.light,
+h5.light,
+h6.light {
+	font-weight: 200;
+}
+
+h1.light strong,
+h2.light strong,
+h3.light strong,
+h4.light strong,
+h5.light strong,
+h6.light strong {
+	font-weight: 600;
+}
+
+h1 {
+	font-size: 6.4rem;
+	line-height: 6.8rem;
+}
+
+h2 {
+	font-size: 5.0rem;
+	line-height: 5.3rem;
+}
+
+h3 {
+	font-size: 3.8rem;
+	line-height: 4.8rem;
+}
+
+h4 {
+	font-size: 3.0rem;
+	line-height: 4rem;
+}
+
+h5 {
+	font-size: 2.4rem;
+	line-height: 2.6rem;
+}
+
+h6 {
+	font-size: 1.8rem;
+	line-height: 2.0rem;
+}
+
+a {
+	transition: all 0.2s ease-in-out;
+	color: #fff;
+	text-decoration: none;
+}
+
+.fade {
+	opacity: 0.4;
+}
+
+.giant {
+	font-size: 10rem;
+}
+
+.wrapper,
+.scroller,
+.page {
+	width: 100%;
+}
+
+.wrapper {
+	background: linear-gradient(142deg, #3820ab, #7609a8, #ad01ad, #b207cc, #7609a8, #3820ab);
+	background-size: 1200% 1200%;
+	animation: background-gradient 30s ease infinite;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.wrapper,
+.page {
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.scroller {
+	transition: transform 0.65s ease-in-out;
+}
+
+.page {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.page__container {
+	display: flex;
+	width: 100%;
+	max-width: 1280px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0 30px;
+	justify-content: center;
+	align-items: center;
+}
+
+.page__content {
+	width: 100%;
+	color: #fff;
+	text-align: center;
+}
+
+@keyframes background-gradient {
+	0% {
+		background-position: 7% 0%
+	}
+
+	50% {
+		background-position: 94% 100%
+	}
+
+	100% {
+		background-position: 7% 0%
+	}
+}
+
+footer {
+	display: block;
+	width: 100%;
+	padding-bottom: 30px;
+	position: absolute;
+	bottom: 0;
+	transition: opacity 0.2s ease-in-out;
+	text-align: center;
+	opacity: 0.4;
+}
+
+footer:hover {
+	opacity: 1;
+}
+
+footer p {
+	margin: 0;
+	font-size: 1.4rem;
+}
+
+footer a:hover {
+	color: #1DA1F2;
+}
